@@ -1,0 +1,277 @@
+/*
+.colors {
+	near_black: #000;
+	dark grey: #373836;
+	mid_grey: #838682;
+	lime_green: #CAF010;
+	lime_green_highlight: #d1f22e;
+	light_grey: #DFDFDD;
+	white: #FFF;
+}
+*/
+
+body {
+	background-color: #666;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 5em;
+	margin: 0;
+	padding: 50px 50px 10px 50px;
+	color: #CAF010;
+	text-align: center;
+	text-shadow: 0 0 10px #373836;
+	letter-spacing: 4px;
+}
+
+.page_header {
+	height: 200px;
+	background-image: url(../images/carousel01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ou_logo {
+	max-height: 130px;
+	padding: 0;
+	margin: 5px;
+	border: solid 1px #373836;
+}
+
+#nav_bar {
+	display: flex;
+	background-color: #CAF010;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	align-items: stretch;
+	border-bottom: 1px #373836 solid;
+	border-top: 1px #373836 solid;
+}
+
+.nav_bar_moving {
+	position: absolute;
+	top: 200px;
+	z-index: 10;
+}
+
+.nav_bar_fixed {
+	position: fixed;
+    z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.nav_element {
+	width: 20%;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 5px;
+	color: #373836;
+	font-weight: bolder;
+}
+
+.dropdown {
+	position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #373836;
+}
+
+.login_info {
+	padding: 5px;
+}
+
+.logout_button {
+	display: none;
+    position: absolute;
+    background-color: #CAF010;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+}
+
+.logout_button a {
+	padding: 10px;
+    text-decoration: none;
+    color: #373836;
+}
+
+.logout_button a:hover {
+	color: #fff;
+}
+
+.dropdown:hover .logout_button {
+	display: block;
+}
+
+.dropdown:hover .login_info {
+	background-color: #e1f676;
+}
+
+.navigation {
+	text-decoration: none;
+	border-left: 1px solid #373836;
+}
+
+.navigation:hover {
+	background-color: #e1f676;
+}
+
+.page_content {
+	position: relative;
+	background-color: #fff;
+}
+
+.content_title {
+	padding: 60px 0 5px 0;
+	width: 100%;
+	background-color: #373836;
+	color: #CAF010;
+}
+
+h2 {
+	font-size: 80px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 10px;
+	color: #CAF010;
+	letter-spacing: 4px;
+}
+
+h3 {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px 0 10px 0;
+	color: #373836;
+}
+
+h4 {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px 0 10px 0;
+	color: #373836;
+}
+
+.main_content {
+	width: 800px;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #373836;
+}
+
+.content_footer {
+	padding: 8px;
+	clear: both;
+	background-color: #CAF010;
+	color: #373836;
+	border-top: 1px #373836 solid;
+}
+
+.tabs_container {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0;
+	background-color: #373836;
+}
+
+ul.tabs {
+	list-style: none;
+ 	padding: 0;
+ 	margin-top: 5px;
+
+}
+
+ul.tabs li {
+	display: inline;
+}
+
+ul.tabs li a:hover {
+	background-color: #838682;
+}
+
+ul.tabs li a {
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	min-width: 100px;
+	text-align: center;
+	float: left;
+	color: #373836;
+	margin-bottom: 0px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	margin-left: 5px;
+	background-color: #DFDFDD;
+	border-top: #CAF010 solid 4px;
+}
+
+
+#active_tab {
+	background-color: #fff;
+}
+
+input {
+	margin: 10px 0px 10px 0px;
+	padding: 5px 10px 5px 10px;
+	border: solid 1px #373836;
+	box-shadow: 0 2px 2px 1px #838682 inset;
+	border-radius: 2px;
+}
+
+.wide_input {
+	width: 740px;
+}
+
+.message_members_form {
+	font-weight: bold;
+	background-color: #DFDFDD;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px 1px #373836, 0 0 20px 1px #CAF010;
+}
+
+.message_members_form textarea {
+	width: 740px;
+	height: 500px;
+	padding: 10px;
+	border: solid 1px #373836;
+	box-shadow: 0 2px 2px 1px #838682 inset;
+	border-radius: 2px;
+	margin: 10px 0 10px 0;
+}
+
+.form_button {
+	background-color: #CAF010;
+	color: #373836;
+	border: none;
+	padding: 5px;
+	margin-right: 5px;
+	box-shadow: 0 0 0 2px #373836;
+	border-radius: 3px;
+}
+
+.form_button:hover {
+	box-shadow: 0 0 0 2px #373836, 0 0 4px 4px #838682;
+}
+
+.form_button:active {
+	background-color: #373836;
+	color: #CAF010;
+	box-shadow: 0 0 0 2px #CAF010;
+}
+
+.form_button:focus {
+	outline:0;
+}

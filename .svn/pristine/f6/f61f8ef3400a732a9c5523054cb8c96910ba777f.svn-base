@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>OURC Admin Membership</title>
+	<link href="../styles/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<div class="title_bar">
+		<img class="ou_logo" src="../images/imageSmallSquare.jpg" alt="OU Logo"/>
+		<h1 class="page_title">OURC Admin</h1>
+		<a href="../races/races.html" class="navigation">Races</a>
+		<a href="../events/race_events.html" class="navigation">Events</a>
+		<a href="../membership/membership.html" class="navigation">Membership</a>
+		<div class="login_info">
+		Admin001
+		</div>
+	</div>
+	<div class="main_page">
+
+		<div class="page_content">
+			<div class="content_title"><h2>Membership</h2></div>
+			<div class="tabs_container">
+				<ul class="tabs">
+					<li><a href="members_admin.html" class="tab">Membership Admin</a></li>
+					<li><a href="#" class="tab" id="active_tab">Message Members</a></li>
+				</ul>
+			</div>
+
+			<div class="main_content">
+				<h3>Message Members</h3>
+
+				<form class="message_members_form">
+					<h4>New Message</h4>
+					Title:<br>
+					<input type="text" name="title" class="wide_input"><br>
+					Date to send:<br> 
+					<input type="date" name="date"><br>
+					Message<br>
+					<textarea name="email_content" cols="40" rows"40"></textarea><br>
+					<input type="button" value="Attach File" class="form_button"> No file attached<br>
+					<br>
+					Please note, only members who gave consent to emails will recieve this.<br>
+					<br>
+					<input type="submit" value="Send" class="form_button">
+					<input type="button" value="Clear" class="form_button">
+				</form>
+			</div>
+			<div class="content_footer">
+				&copy Open University Running Club 2016
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

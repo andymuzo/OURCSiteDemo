@@ -1,0 +1,9 @@
+window.onscroll=function(){
+	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	if (scrollTop >= 150) {
+		document.getElementById("title_bar").className = "title_bar_fixed";
+	} else {
+		document.getElementById("title_bar").className = "title_bar_moving";
+	}
+}
+
